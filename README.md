@@ -41,7 +41,7 @@ pip install -r requirements.txt
 After cloning the repository successfully and installing the dependencies, now below it are commands you need exceute, in order to run the software successfully.
 
 ```bash
-cd spamy
+cd Spamy
 cd src
 python3 spamy
 ```
