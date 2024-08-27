@@ -1,0 +1,11 @@
+imaplib
+email
+email.header
+re
+time
+email.utils
+textwrap
+requests
+hashlib
+dns.resolver
+dkim
