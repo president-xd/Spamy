@@ -29,15 +29,24 @@ git clone https://github.com/yourusername/spamy.git
 - `dns.resolver` - For DNS lookups (not fully implemented).
 - `dkim` - For handling DKIM signatures.
 
-## Installation
+## Installing dependencies
 
-After cloning, and installing all requirements.
+```bash
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+After cloning the repository successfully and installing the dependencies, now below it are commands you need exceute, in order to run the software successfully.
 
 ```bash
 cd spamy
 cd src
 python3 spamy
 ```
+
+
 ## Contact
 - **Github**: president-xd
 - **mail**: mohsin-mukhtiar@protonmail.com
