@@ -19,22 +19,10 @@ MALICIOUS_EXTENSIONS = {
 THRESHOULD = 20
 
 def mark_as_spam(mail, email_id):
-    try:
-        # Select the inbox
-        mail.select("inbox")
-        
-        # Copy the email to the Spam folder
-        result, data = mail.copy(email_id, "Spam")
-        if result == "OK":
-            # Mark the email for deletion in the inbox
-            mail.store(email_id, '+FLAGS', '\\Deleted')
-            # Permanently remove marked emails
-            mail.expunge()
-            print(f"Email with ID {email_id} marked as spam.")
-        else:
-            print(f"Failed to mark email with ID {email_id} as spam.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    result = mail.store(email_id, "+X-GM-LABELS", "\\Spam")
+    if result[0] == "OK":
+        mail.store(email_id, "+FLAGS", "\\Deleted")
+        mail.expunge()
 
 
 def check_and_extract_emails(email_address, mail, VIRUS_TOTAL_API, THRESHOLD):
