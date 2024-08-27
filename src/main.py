@@ -1,12 +1,15 @@
-from email_connection import *
-from email_checker import *
+from utils.email_connection import *
+from utils.email_checker import *
 import time
 
-VIRUS_TOTAL_API = "165a3b18909ef58f61f7d05c82878fbd95bab4e3ef9e196a216f0f344d74f1d1"
+VIRUS_TOTAL_API = ""
 
 if __name__ == "__main__":
-    email_address = "lasharimohsin19@gmail.com"
-    app_password = "qxma fuag xjzt ejif"  # Consider using environment variables for security
+    banner()
+    print("App password is necessary for this tools this can be obained by turning your 2-Factor Authentication of your Google account.")
+    email_address = input("Enter your email: ")
+    app_password = input("Enter your app passwords: ")
+    VIRUS_TOTAL_API = input("Enter your Virus Total API: ")
 
     # Connect to Gmail
     mail = connect_to_gmail(email_address, app_password)
