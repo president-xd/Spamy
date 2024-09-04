@@ -16,7 +16,7 @@ Spamy is a comprehensive email analysis tool designed to help users efficiently 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/spamy.git
+git clone https://github.com/president-xd/spamy.git
 ```
 
 ## Dependencies
