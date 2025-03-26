@@ -43,6 +43,16 @@ After cloning the repository successfully and installing the dependencies, now b
 ```bash
 cd Spamy
 cd src
+```
+
+### Make Sure to Change this part of the code:
+```python
+    email_address = input("Enter your email: ")
+    app_password = input("Enter your app passwords: ")
+    VIRUS_TOTAL_API = input("Enter your Virus Total API: ")
+```
+
+```shell
 python3 spamy
 ```
 
