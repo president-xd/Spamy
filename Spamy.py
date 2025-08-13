@@ -408,8 +408,8 @@ def move_to_spam(mail, email_id):
 
 # Main function to connect and start analyzing emails
 if __name__ == "__main__":
-    email_address = "lasharimohsin19@gmail.com"
-    app_password = "qxma fuag xjzt ejif"
+    email_address = "REPLACE_IT"
+    app_password = "REPLACE_IT"
 
     # Connect to Gmail
     mail = connect_to_gmail(email_address, app_password)
